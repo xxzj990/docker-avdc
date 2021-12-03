@@ -9,7 +9,7 @@ RUN \
     apt-get install -y wget ca-certificates && \
     mkdir build && \
     cd build && \
-    wget -O - https://github.com/yoshiko2/AV_Data_Capture/archive/${AVDC_VERSION}.tar.gz | tar xz && \
+    wget -O - https://hub.fastgit.org/yoshiko2/AV_Data_Capture/archive/${AVDC_VERSION}.tar.gz | tar xz && \
     mv AV_Data_Capture-${AVDC_VERSION} /app && \
     cd .. && \
     rm -rf build && \
